@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .table-container {
+            margin: 20px auto;
+            border: 0;
+            position: relative;
+            width: fit-content;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 10px 10px; /* Adds spacing between both rows and columns */
+            width: 100%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 5px solid blue;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            color: black;
+            font-weight: bold;
+        }
+        th:nth-child(1) {
+            background-color: #b3e57d; /* Light green for first column header */
+        }
+        th:nth-child(2) {
+            background-color: #8db1e2; /* Light blue for second column header */
+        }
+        th:nth-child(3) {
+            background-color: #f8f4c4; /* Light yellow for third column header */
+        }
+        th:nth-child(4) {
+            background-color: purple; /* Purple for fourth column header */
+            color: white;
+        }
+        td {
+            background-color: white;
+        }
+        .purple-dotted {
+            border-top: 5px dotted purple;
+            width: 100%;
+        }
+        .green-dashed {
+            border-bottom: 5px dashed green;
+            width: 100%;
+        }
+        .dotted-border {
+            border-top: 5px dotted purple;
+        }
+        .dashed-border {
+            border-bottom: 5px dashed green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <div class="purple-dotted"></div>
+        <table>
+            <tr>
+                <th>Vacation Destination</th>
+                <th>Dates</th>
+                <th>Hotel</th>
+                <th>Activities</th>
+            </tr>
+            <tr>
+                <td>Denver, Colorado</td>
+                <td>6/7 to 6/21</td>
+                <td>Hyatt</td>
+                <td>Rocky Mountains, Botanic Gardens</td>
+            </tr>
+            <tr>
+                <td>Lake Lucerne, Switzerland</td>
+                <td>6/27 - 7/7</td>
+                <td>Hilton</td>
+                <td>Mount Rigi, Chapel Bridge</td>
+            </tr>
+            <tr>
+                <td>Reykjavik, Iceland</td>
+                <td>4/28 - 5/7</td>
+                <td>The Four Seasons</td>
+                <td>Northern Lights, Blue Lagoon</td>
+            </tr>
+            <tr>
+                <td>Istanbul, Turkey</td>
+                <td>5/7 - 5/21</td>
+                <td>Hilton</td>
+                <td>Hagia Sophia, Topkapi Palace</td>
+            </tr>
+            <tr>
+                <td>Tokyo, Japan</td>
+                <td>9/21 - 10/10</td>
+                <td>Marriott</td>
+                <td>Akihabara, Senso-jii Temple</td>
+            </tr>
+        </table>
+        <div class="green-dashed"></div>
+    </div>
+
+</body>
+</html>
